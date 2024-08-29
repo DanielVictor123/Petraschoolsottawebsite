@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /*---------FACTS STARTS----------*/
+      .facts-container {
+        display: flex;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 130px;
+        justify-content: space-around;
+        width: 90%;
+        position: relative;
+        flex-wrap: wrap; /* Allow wrapping on smaller screens */
+      }
+
+      .fact {
+        background: transparent;
+        border: 1px solid #000000;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+        z-index: 1;
+        margin: 10px; /* Add margin for spacing */
+        flex: 1 1 calc(20% - 20px); /* Default width for larger screens */
+      }
+
+      .facts-container:hover .fact {
+        border: 2px solid #4480c0;
+      }
+
+      .fact.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .count {
+        font-size: 2em;
+        font-weight: bold;
+        color: #fff;
+      }
+
+      video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+        opacity: 1.5;
+      }
+
+      .facts-container:hover video {
+        cursor: e-resize;
+      }
+
+      /* Media Queries for Responsiveness */
+      @media (max-width: 768px) {
+        .fact {
+          flex: 1 1 calc(45% - 20px); /* Adjust width for tablets */
+        }
+      }
+
+      @media (max-width: 480px) {
+        .fact {
+          flex: 1 1 100%; /* Full width for mobile */
+        }
+
+        .count {
+          font-size: 1.5em; /* Adjust font size for mobile */
+        }
+
+        h1 {
+          font-size: 1.8em; /* Adjust heading size for mobile */
+        }
+
+        h3 {
+          font-size: 1em; /* Adjust subheading size for mobile */
+        }
+
+        .facts-container {
+          margin-left: 0; /* Remove left margin on mobile */
+        }
+      }
+      /*-------------------------
+      FACTS ENDS
+      -------------------------*/
+    </style>
+  </head>
+  <body>
+    <!-- FACTS STARTS-->
+    <div
+      class="container mb-3 pb-2 justify-content-center"
+      id="pages"
+      style="margin-top: 70px"
+      data-aos="fade-up"
+      data-aos-delay="100"
+    >
+      <h1 class="text-warning text-uppercase">
+        FACTS <i class="bi bi-arrow-down me-2"></i>
+      </h1>
+
+      <h3 class="fw-bold fw-bold" style="color: #263a4f">
+        The following is not a detailed facts of the school, rather it's a
+        summary of the four major facts of the school.
+      </h3>
+    </div>
+
+    <div
+      class="facts-container"
+      id="facts"
+      style="margin-top: 30px opx"
+      data-aos="fade-right"
+      data-aos-delay="300"
+    >
+      <video autoplay muted loop>
+        <source
+          src="/petra_images/petra_schools_videos/mark-ronson-uptown-funk_103624.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support HTML5 video.
+      </video>
+      <div class="fact" id="yearsExperience">
+        <div class="count" data-target="25">0</div>
+        <p style="color: #2686ed; font-size: 1em; font-weight: bold">
+          Years of Experience
+        </p>
+      </div>
+      <div class="fact" id="experiencedTeachers">
+        <div class="count" data-target="50">0</div>
+        <p style="color: #2686ed; font-size: 1em; font-weight: bold">
+          Experienced Teachers
+        </p>
+      </div>
+      <div class="fact" id="awardsWon">
+        <div class="count" data-target="50">0</div>
+        <p style="color: #2686ed; font-size: 1em; font-weight: bold">
+          Awards Won
+        </p>
+      </div>
+      <div class="fact" id="satisfiedStudents">
+        <div class="count" data-target="1000">0</div>
+        <p style="color: #2686ed; font-size: 1em; font-weight: bold">
+          Satisfied Students
+        </p>
+      </div>
+    </div>
+    <!-- FACTS ENDS-->
+
+    <script>
+      const facts = document.querySelectorAll(".fact");
+
+      // Function to animate the count up
+      function countUp(element) {
+        const target = +element.dataset.target;
+        let count = 0;
+        const speed = Math.round(target / 25); // Increase speed based on target
+
+        const updateCount = () => {
+          count += speed;
+          if (count < target) {
+            element.textContent = count;
+            setTimeout(updateCount, 50);
+          } else {
+            element.textContent = target;
+          }
+        };
+        updateCount();
+      }
+
+      // Fade in animation and start counting
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            const countElement = entry.target.querySelector(".count");
+            countUp(countElement);
+            observer.unobserve(entry.target);
+          }
+        });
+      });
+
+      facts.forEach((fact) => {
+        observer.observe(fact);
+      });
+    </script>
+  </body>
+</html>
