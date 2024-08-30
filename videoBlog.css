@@ -1,0 +1,132 @@
+body {
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  color: #000;
+}
+
+.navbar-brand img {
+  width: 40px;
+  margin-right: 7px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+  top: 100%;
+}
+
+.dropdown-menu a {
+  display: block;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.containerv {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.form-section,
+.video-section {
+  padding: 20px;
+  width: 48%;
+  transition: transform 0.3s;
+}
+.form-section:hover,
+.video-section:hover {
+  transform: scale(1.02);
+}
+.form-section h2,
+.video-section h2 {
+  margin-top: 0;
+  color: #333;
+}
+input,
+textarea,
+button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+button {
+  background-color: #6a11cb;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+button:hover {
+  background-color: #2575fc;
+}
+.delete-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.delete-btn:hover {
+  background-color: darkred;
+}
+.comment-section {
+  margin-top: 20px;
+}
+.comment {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  transition: background-color 0.3s;
+}
+.comment:hover {
+  background-color: #f0f0f0;
+}
+.show-less {
+  cursor: pointer;
+  color: #6a11cb;
+  text-decoration: underline;
+}
+.profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.post-header {
+  display: flex;
+  align-items: center;
+}
+video {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .form-section,
+  .video-section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

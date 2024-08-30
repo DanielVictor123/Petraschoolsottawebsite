@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Petra Schools Otta (Video Blogs)</title>
+    <title>Petra Schools Otta (Blog Page)</title>
+    <link rel="icon" type="images/jpg" href="Images/Petra Schools Logo.jpg" />
+    <link rel="stylesheet" href="petra_bootstrap.css" />
+    <!-- <link rel="stylesheet" href="petrastyle.css" /> -->
+    <link rel="stylesheet" href="videoBlog.css" />
+    <link rel="stylesheet" href="/known-master/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/known-master/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/known-master/css/owl.carousel.css" />
+    <link rel="stylesheet" href="/known-master/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="/known-master/css/templatemo-style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- TEMPLATE BOOTSTRAP ICONS -->
+    <link
+      href="/iportfolio/assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/iportfolio/assets/vendor/boxicons/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link href="/farmfresh-1.0.0/css/style.css" rel="stylesheet" />
+
+    <!-- <link href="/farmfresh-1.0.0/css/style.css" rel="stylesheet"> -->
+
+    <!-- TEMPLATE BOOTSTRAP ICONS -->
+  </head>
+  <body
+    id="top"
+    data-spy="scroll"
+    data-target=".navbar-collapse"
+    data-offset="50"
+  >
+    <!--Pre-Loader Starts-->
+    <section class="preloader">
+      <div class="spinner">
+        <span class="spinner-rotate"></span>
+      </div>
+    </section>
+    <!--Pre-Loader Ends-->
+
+    <!-- NAV-BAR STARTS -->
+    <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+          >
+            <span class="icon icon-bar"></span>
+            <span class="icon icon-bar"></span>
+            <span class="icon icon-bar"></span>
+          </button>
+
+          <a href="Images/Petra Schools Logo.webp" class="navbar-brand">
+            <img
+              src="Images/Petra Schools Logo.webp"
+              alt="Petra School Logo"
+              title="Petra School Ota"
+            />
+          </a>
+        </div>
+
+        <!-- NAV-LINKS STARTS -->
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-nav-first">
+            <li><a href="home.html" class="smoothScroll">Home</a></li>
+
+            <li class="dropdown">
+              <a class="smoothScroll" href="home.html">
+                About
+                <i class="bx bx-down-arrow"></i>
+              </a>
+
+              <div class="dropdown-menu m-0">
+                <a href="home.html" class="smoothScroll">
+                  <i class="bi bi-people px-2"></i>
+                  About Us
+                </a>
+                <a href="home.html" class="smoothScroll">
+                  <i class="bi bi-people px-2"></i>
+                  objectives
+                </a>
+
+                <a href="gallery.html" class="smoothScroll">
+                  <i class="bi bi-people px-2"></i>
+                  Gallery
+                </a>
+              </div>
+            </li>
+
+            <li class="dropdown">
+              <a class="smoothScroll" href="home.html">
+                Pages
+                <i class="bx bx-down-arrow"></i>
+              </a>
+
+              <div class="dropdown-menu m-0">
+                <a href="home.html" class="smoothScroll">
+                  <i class="bi bi-people"></i>
+                  Testimonial
+                </a>
+
+                <a href="home.html" class="smoothScroll">
+                  <i class="bi bi-people px-2"></i>
+                  Facts
+                </a>
+
+                <a href="videoBlog.html" class="smoothScroll">
+                  <i class="bi bi-people px-2"></i>
+                  Video Blog
+                </a>
+
+                <a href="home.html" class="smoothScroll">
+                  <i class="bi bi-person px-2"></i>
+                  Blog Articles
+                </a>
+              </div>
+            </li>
+
+            <li class="dropdown">
+              <a class="smoothScroll" href="#none" id="admission">
+                Admission
+                <i class="bx bx-down-arrow"></i>
+              </a>
+
+              <div class="dropdown-menu m-0">
+                <a
+                  href="https://paystack.com/pay/petradmitsec"
+                  target="_blank"
+                  class="smoothScroll"
+                >
+                  <i class="bi bi-people px-2"></i>
+                  Secondary
+                </a>
+
+                <a
+                  href="https://paystack.com/pay/petradmitpry"
+                  target="_blank"
+                  class="smoothScroll"
+                >
+                  <i class="bi bi-people px-2"></i>
+                  Primary
+                </a>
+              </div>
+            </li>
+
+            <li><a href="contact.html" class="smoothScroll">Contact</a></li>
+            <li><a href="blog.html" class="smoothScroll">Blog Details</a></li>
+            <li><a href="#footer" class="smoothScroll">Footer</a></li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href=""><i class="fa fa-phone"></i>+234 812 362 6509</a>
+            </li>
+          </ul>
+        </div>
+        <!-- NAV-LINKS ENDS -->
+      </div>
+    </section>
+    <!-- NAV-BAR ENDS -->
+
+    <!-- VIDEO BLOG STARTS HERE -->
+    <div class="containerv container mt-5" id="videoblog">
+      <div class="form-section">
+        <h2>Post a Video</h2>
+        <form id="videoForm">
+          <input type="text" id="name" placeholder="Your Name" required />
+          <input type="file" id="profileImage" accept="image/*" required />
+          <input type="text" id="subject" placeholder="Subject" required />
+          <textarea
+            id="description"
+            placeholder="Description"
+            required
+          ></textarea>
+          <input
+            type="text"
+            id="videoUrl"
+            placeholder="Enter video URL (MP4 only)"
+          />
+          <input type="file" id="videoFile" accept="video/mp4" />
+          <button type="submit" class="text-white bg-primary">
+            Post Video
+          </button>
+        </form>
+      </div>
+      <div class="video-section" id="videoPosts">
+        <h2>Video Posts</h2>
+      </div>
+    </div>
+    <!-- VIDEO BLOG ENDS HERE -->
+
+    <!-- SCRIPTS -->
+
+    <script src="videoBlog.js"></script>
+
+    <script src="/known-master/js/jquery.js"></script>
+    <!-- <script src="/known-master/js/bootstrap.min.js"></script> -->
+    <script src="/known-master/js/owl.carousel.min.js"></script>
+    <script src="/known-master/js/smoothscroll.js"></script>
+    <script src="/known-master/js/custom.js"></script>
+  </body>
+</html>
