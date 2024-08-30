@@ -1,0 +1,127 @@
+/* Header styling */
+header {
+  background: url(/codingbootcamp/home-background.webp);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+header .header-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+header p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Main content styling */
+.main-content {
+  margin-top: 20px;
+}
+
+.main-content .why-choose-us,
+.main-content .activities {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px #1f3b54;
+  /* width: 48%; */
+}
+
+.main-content h2 {
+  font-size: 24px;
+  color: #1f3b54;
+  margin-bottom: 10px;
+}
+
+.main-content p {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.main-content ul {
+  list-style-type: none;
+}
+
+.main-content ul li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* New Section with Floating Buttons */
+.admission-forms {
+  text-align: center;
+}
+
+.admission-forms h2 {
+  font-size: 24px;
+  color: #1f3b54;
+  margin-bottom: 20px;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.floating-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #1f3b54;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 50px;
+  box-shadow: 0px 4px 8px #1f3b54;
+  transition: all 0.3s ease;
+  position: relative;
+  animation: floating 3s ease-in-out infinite;
+  text-decoration: none;
+}
+
+.floating-button:hover {
+  background-color: #1476a8;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.click-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #fff;
+  color: #1f3b54;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 50px;
+  box-shadow: 0px 4px 8px #1f3b54;
+  transition: all 0.3s ease;
+  position: relative;
+  animation: floating 3s ease-in-out infinite;
+  text-decoration: none;
+}
+
+.click-button:hover {
+  background-color: #1476a8;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

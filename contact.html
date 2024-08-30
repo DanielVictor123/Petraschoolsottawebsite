@@ -28,6 +28,10 @@
     />
     <link href="/farmfresh-1.0.0/css/style.css" rel="stylesheet" />
     <!-- TEMPLATE BOOTSTRAP ICONS -->
+
+    <!-- MAP API CSS LINK -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <!-- MAP API CSS LINK -->
   </head>
 
   <body
@@ -120,31 +124,10 @@
               </div>
             </li>
 
-            <li class="dropdown">
-              <a class="smoothScroll" href="#about" id="admission">
+            <li>
+              <a class="smoothScroll" href="admission.html" id="admission">
                 Admission
-                <i class="bx bx-down-arrow"></i>
               </a>
-
-              <div class="dropdown-menu m-0">
-                <a
-                  href="https://paystack.com/pay/petradmitsec"
-                  target="_blank"
-                  class="smoothScroll"
-                >
-                  <i class="bi bi-people px-2"></i>
-                  Secondary
-                </a>
-
-                <a
-                  href="https://paystack.com/pay/petradmitpry"
-                  target="_blank"
-                  class="smoothScroll"
-                >
-                  <i class="bi bi-people px-2"></i>
-                  Primary
-                </a>
-              </div>
             </li>
 
             <li><a href="#contact" class="smoothScroll">Contact</a></li>
@@ -491,13 +474,15 @@
                     <i class="bi bi-geo-alt fs-4 text-white fw-bold"></i>
                   </div>
                 </a>
-                <div class="ps-3">
-                  <h5 class="fw-bold" style="color: #4480c0">Our Office</h5>
+
+                <div class="ps-3 address-office">
+                  <h5 class="fw-bold" style="color: #fff">Our Office</h5>
                   <a
-                    href="/myBootstrapPortfolio/BOOTSTRAP BASICS/bootstrapClasswork.html"
-                    class="text-decoration-none"
+                    href="https://www.google.com/maps/place/Petra+Schools+Ota/@6.7013367,3.2310085,263m/data=!3m1!1e3!4m6!3m5!1s0x103b984e987eaa9b:0x4622a89409d74b36!8m2!3d6.7013354!4d3.2316522!16s%2Fg%2F11bzt7kz2x?hl=en&entry=ttu&g_ep=EgoyMDI0MDgyNy4wIKXMDSoASAFQAw%3D%3D"
+                    class="address"
+                    target="_blank"
                   >
-                    <span class="text-white fw-bold"
+                    <span class="text-primary fw-bold address"
                       >Omolabake Avenue, off idiroko road, Ota, Ogun State</span
                     >
                   </a>
@@ -514,9 +499,9 @@
                   </div>
                 </a>
                 <div class="ps-3">
-                  <h5 class="fw-bold" style="color: #4480c0">Email Us</h5>
+                  <h5 class="fw-bold" style="color: #fff">Email Us</h5>
                   <a href="https://gmail.com" class="text-decoration-none">
-                    <span class="text-white fw-bold"
+                    <span class="text-primary fw-bold"
                       >info@petraschoolsota.com</span
                     >
                   </a>
@@ -533,35 +518,49 @@
                   </div>
                 </a>
                 <div class="ps-3">
-                  <h5 class="fw-bold" style="color: #4480c0">Call Us On</h5>
+                  <h5 class="fw-bold" style="color: #fff">
+                    Call/WhatsApp Us On
+                  </h5>
                   <a
                     href="/myBootstrapPortfolio/BOOTSTRAP BASICS/bootstrapTwitterLogin.html"
                     class="text-decoration-none"
                   >
-                    <span class="text-white fw-bold">+234 812 3626 509</span>
+                    <span class="text-primary fw-bold">+234 812 3626 509</span>
                   </a>
                 </div>
               </div>
 
               <div class="d-flex mb-4">
-                <a href="https://whatsapp.com" target="_blank">
+                <a
+                  href="https://www.instagram.com/petraschoolsota/"
+                  target="_blank"
+                >
                   <div
                     class="rounded-circle d-flex align-items-center justify-content-center"
                     style="width: 60px; height: 60px; background-color: #4480c0"
                   >
-                    <i class="bx bxl-whatsapp fs-4 text-white fw-bold"></i>
+                    <i class="bx bxl-instagram fs-4 text-white fw-bold"></i>
                   </div>
                 </a>
                 <div class="ps-3">
-                  <h5 class="fw-bold" style="color: #4480c0">WhatsApp Us on</h5>
-                  <a href="https://whatsapp.com" class="text-decoration-none">
-                    <span class="text-white fw-bold">+234 812 3626 509</span>
+                  <h5 class="fw-bold" style="color: #fff">
+                    Visit our instagram Page
+                  </h5>
+                  <a
+                    href="https://www.instagram.com/petraschoolsota/"
+                    class="text-decoration-none"
+                    target="_blank"
+                  >
+                    <span class="text-primary fw-bold">@petraschoolsotta</span>
                   </a>
                 </div>
               </div>
 
               <div class="d-flex">
-                <a href="https://facebook.com" target="_blank">
+                <a
+                  href="https://web.facebook.com/profile.php?id=61564657421664"
+                  target="_blank"
+                >
                   <div
                     class="rounded-circle d-flex align-items-center justify-content-center"
                     style="width: 60px; height: 60px; background-color: #4480c0"
@@ -570,14 +569,15 @@
                   </div>
                 </a>
                 <div class="ps-3">
-                  <h5 class="fw-bold" style="color: #4480c0">
+                  <h5 class="fw-bold" style="color: #fff">
                     Also reach Us on Facebook
                   </h5>
                   <a
-                    href="/myBootstrapPortfolio/BOOTSTRAP BASICS/bootstrapFacebookLogin.html"
+                    href="https://web.facebook.com/profile.php?id=61564657421664"
                     class="text-decoration-none"
+                    target="_blank"
                   >
-                    <span class="text-white fw-bold">Petraschoolsota</span>
+                    <span class="text-primary fw-bold">Petraschoolsota</span>
                   </a>
                 </div>
               </div>
@@ -587,6 +587,8 @@
       </div>
     </div>
     <!--Contact Ends-->
+
+    <div id="map container"></div>
 
     <!-- FOOTER STARTS -->
     <div
@@ -873,6 +875,9 @@
     <!-- FOOTER ENDS -->
 
     <!-- JavaScript -->
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="mapApi.js"></script>
 
     <script src="/known-master/js/jquery.js"></script>
     <script src="/known-master/js/bootstrap.min.js"></script>

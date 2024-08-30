@@ -201,6 +201,12 @@ function updateCategoryCounts() {
         { name: "Coding Boot-camp", img: "/codingbootcamp/Coding_bootcamp.webp" },
         { name: "Admission", img: "Images/Petra Schools Logo.webp" },
         { name: "Summer Holiday Coaching", img: "codingbootcamp/Summer Holiday - Copy.webp" },
+        { name: "Technology", img: "/codingbootcamp/Coding_bootcamp.webp" },
+        { name: "Socials", img: "codingbootcamp/about-video.webp" },
+        { name: "Politics", img: "codingbootcamp/politicians-in-Nigeria.jpg" },
+        { name: "Sports", img: "petra_images/EXCURSSION/_MG_1611 copy.webp" },
+        { name: "Petra News", img: "codingbootcamp/bootcamp3.webp" },
+        { name: "Excursions", img: "petra_images/EXCURSSION/_MG_1861 copy.webp" },
     ];
 
     categories.forEach((category) => {

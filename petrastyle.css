@@ -23,6 +23,10 @@
   display: block;
 }
 
+.address-office .address:hover {
+  color: #067af7;
+}
+
 /*--ABOUT STARTS--*/
 .slideshow-container {
   position: relative;

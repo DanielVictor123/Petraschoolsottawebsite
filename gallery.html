@@ -113,31 +113,10 @@
                 </a>
               </div>
             </li>
-            <li class="dropdown">
-              <a class="smoothScroll" href="#about">
+            <li>
+              <a class="smoothScroll" href="admission.html" id="admission">
                 Admission
-                <i class="bx bx-down-arrow"></i>
               </a>
-
-              <div class="dropdown-menu m-0">
-                <a
-                  href="https://paystack.com/pay/petradmitsec"
-                  target="_blank"
-                  class="smoothScroll"
-                >
-                  <i class="bi bi-people px-2"></i>
-                  Secondary
-                </a>
-
-                <a
-                  href="https://paystack.com/pay/petradmitpry"
-                  target="_blank"
-                  class="smoothScroll"
-                >
-                  <i class="bi bi-people px-2"></i>
-                  Primary
-                </a>
-              </div>
             </li>
             <li><a href="contact.html" class="smoothScroll">Contact</a></li>
             <li><a href="blog.html" class="smoothScroll">Blog Details</a></li>
@@ -377,6 +356,7 @@
       <div class="filter-buttons">
         <button onclick="filterGallery('all')">All</button>
         <button onclick="filterGallery('students')">Students</button>
+        <button onclick="filterGallery('awards')">Awards</button>
         <button onclick="filterGallery('teachers')">Teachers</button>
         <button onclick="filterGallery('staffs')">Staffs</button>
         <button onclick="filterGallery('excursions')">Excursions</button>
@@ -424,6 +404,14 @@
             >
               View in Gallery
             </button>
+            <button>Learn More</button>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="awards">
+          <img src="/2.webp" alt="Teacher 1" onclick="openModal(this.src)" />
+          <div class="overlay">
+            <button onclick="openModal('/2.webp')">View in Gallery</button>
             <button>Learn More</button>
           </div>
         </div>
@@ -520,6 +508,22 @@
             >
               View in Gallery
             </button>
+            <button>Learn More</button>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="awards">
+          <img src="/3.webp" alt="Teacher 1" onclick="openModal(this.src)" />
+          <div class="overlay">
+            <button onclick="openModal('/3.webp')">View in Gallery</button>
+            <button>Learn More</button>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="awards">
+          <img src="/4.webp" alt="Teacher 1" onclick="openModal(this.src)" />
+          <div class="overlay">
+            <button onclick="openModal('/4.webp')">View in Gallery</button>
             <button>Learn More</button>
           </div>
         </div>
@@ -635,6 +639,14 @@
           </div>
         </div>
 
+        <div class="gallery-item" data-category="awards">
+          <img src="/5.webp" alt="Teacher 1" onclick="openModal(this.src)" />
+          <div class="overlay">
+            <button onclick="openModal('/5.webp')">View in Gallery</button>
+            <button>Learn More</button>
+          </div>
+        </div>
+
         <div class="gallery-item" data-category="teachers">
           <img
             src="/petra_images/secondary_teachers/Teacher2.webp"
@@ -693,6 +705,14 @@
             <button onclick="openModal('/petra_images/Cultural/DSC_0303.webp')">
               View in Gallery
             </button>
+            <button>Learn More</button>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="awards">
+          <img src="/6.webp" alt="Teacher 1" onclick="openModal(this.src)" />
+          <div class="overlay">
+            <button onclick="openModal('/6.webp')">View in Gallery</button>
             <button>Learn More</button>
           </div>
         </div>
