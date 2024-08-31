@@ -142,7 +142,6 @@
 
 .facts-container:hover .fact {
   border: 2px solid #4480c0;
-  transform: translateY(80px);
 }
 
 .fact.visible {
