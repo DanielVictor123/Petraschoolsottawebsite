@@ -198,15 +198,15 @@ function updateCategoryCounts() {
     categoryList.innerHTML = ""; // Clear existing categories
 
     const categories = [
-        { name: "Coding Boot-camp", img: "/codingbootcamp/Coding_bootcamp.webp" },
-        { name: "Admission", img: "Images/Petra Schools Logo.webp" },
-        { name: "Summer Holiday Coaching", img: "codingbootcamp/Summer Holiday - Copy.webp" },
-        { name: "Technology", img: "/codingbootcamp/Coding_bootcamp.webp" },
-        { name: "Socials", img: "codingbootcamp/about-video.webp" },
-        { name: "Politics", img: "codingbootcamp/politicians-in-Nigeria.jpg" },
-        { name: "Sports", img: "petra_images/EXCURSSION/_MG_1611 copy.webp" },
-        { name: "Petra News", img: "codingbootcamp/bootcamp3.webp" },
-        { name: "Excursions", img: "petra_images/EXCURSSION/_MG_1861 copy.webp" },
+        { name: "Coding Boot-camp", img: "https://danielvictor123.github.io/Petraschoolsottawebsite/codingbootcamp/Coding_bootcamp.webp" },
+        { name: "Admission", img: "https://danielvictor123.github.io/Petraschoolsottawebsite/Images/Petra Schools Logo.webp" },
+        { name: "Summer Holiday Coaching", img: "https://danielvictor123.github.io/Petraschoolsottawebsite/codingbootcamp/Summer Holiday - Copy.webp" },
+        { name: "Technology", img: "https://danielvictor123.github.io/Petraschoolsottawebsite/codingbootcamp/Coding_bootcamp.webp" },
+        { name: "Socials", img: "https://danielvictor123.github.io/Petraschoolsottawebsite/codingbootcamp/about-video.webp" },
+        { name: "Politics", img: "https://danielvictor123.github.io/Petraschoolsottawebsite/codingbootcamp/politicians-in-Nigeria.jpg" },
+        { name: "Sports", img: "https://danielvictor123.github.io/Petraschoolsottawebsite/petra_images/EXCURSSION/_MG_1611 copy.webp" },
+        { name: "Petra News", img: "https://danielvictor123.github.io/Petraschoolsottawebsite/codingbootcamp/bootcamp3.webp" },
+        { name: "Excursions", img: "https://danielvictor123.github.io/Petraschoolsottawebsite/petra_images/EXCURSSION/_MG_1861 copy.webp" },
     ];
 
     categories.forEach((category) => {
