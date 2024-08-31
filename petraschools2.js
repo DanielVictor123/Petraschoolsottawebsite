@@ -16,17 +16,17 @@ let slideInterval2 = setInterval(showSlides, 3000); // Change slide every 3 seco
 
 const slideshowContainer2 = document.querySelector('.slideshow-container2');
 
-slideshowContainer2.addEventListener('mouseover', () => {
-    clearInterval(slideInterval2);
-    video2.style.display = 'block';
-    video2.play();
-});
+// slideshowContainer2.addEventListener('mouseover', () => {
+//     clearInterval(slideInterval2);
+//     video2.style.display = 'block';
+//     video2.play();
+// });
 
-slideshowContainer2.addEventListener('mouseout', () => {
-    video2.style.display = 'none';
-    video2.pause();
-    slideInterval2 = setInterval(showSlides, 3000); // Restart slideshow
-});
+// slideshowContainer2.addEventListener('mouseout', () => {
+//     video2.style.display = 'none';
+//     video2.pause();
+//     slideInterval2 = setInterval(showSlides, 3000); // Restart slideshow
+// });
 
 // Initial display
 showSlides();
